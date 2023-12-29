@@ -1,4 +1,4 @@
-package com.study.hello.bigdata.hadoop.mapreduce;
+package com.study.hello.bigdata.hadoop.mapreduce.wordcount;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -38,5 +38,6 @@ public class WordCountDriver {
         boolean result = job.waitForCompletion(true);
         System.exit(result ? 0 : 1);
 
-        //集群执行命令：hadoop jar wc.jar com.study.hello.bigdata.hadoop.mapreduce.WordCountDriver /input /output
+        //集群执行命令：hadoop jar wc.jar com.study.hello.bigdata.hadoop.mapreduce.wordcount.WordCountDriver /input /output
+    }
 }
